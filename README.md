@@ -20,7 +20,7 @@ We are positioned to evaluate the detection accuracy of NHOD, which is compared 
 |Algorithm\Dateset|Mnist|Musk|PInternetAds|KDDCup99|Arrhythmia|HAPT|
 |----|----|----|----|----|----|----|
 ||k=88 |k=55|k=57|k=247 | k=21 |  k=105|
-|AUC|----|----|----|----|----|----|
+|**AUC**| | | | | | |
 |NHOD|88.27|100.0|72.18| 98.93| 81.33|97.21|
 |LGOD	|63.08	|70.95|67.89	|81.33	|69.96	|80.09|
 |LOF	|79.24	|35.47	|62.60	|68.84	|75.92	|53.25|
@@ -28,7 +28,7 @@ We are positioned to evaluate the detection accuracy of NHOD, which is compared 
 |MOD+	|84.13	|96.25	|59.86	|98.42	|79.70	|94.92|
 |ABOD	|36.53	|3.447	|53.77	|75.44	|76.84	|92.73|
 |SOD	|55.21	|88.16	|59.49	|94.81	|71.20	|89.97|
-|ACC|----|----|----|----|----|----|
+|**ACC**| | | | | | |
 |NHOD	|89.37|100.0|86.55|99.51|84.96| 95.70|
 |LGOD	|85.95	|95.56	|81.07	|99.40	|81.42	|93.41|
 |LOF	|88.19	|93.86	|80.30	|99.19	|83.19  |90.92|
