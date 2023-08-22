@@ -11,7 +11,7 @@ python NHOD.py
 ```
 
 ### Experiment
-All experimental data are sourced from UCI (https://archive.ics.uci.edu/), ODDS (https://odds.cs.stonybrook.edu/), and DAMI (https://www.dbs.ifi.lmu.de/research/outlier-evaluation/DAMI/).
+All experimental data are sourced from [UCI](https://archive.ics.uci.edu/), [ODDS](https://odds.cs.stonybrook.edu/), and [DAMI](https://www.dbs.ifi.lmu.de/research/outlier-evaluation/DAMI/).
 
 We are positioned to evaluate the detection accuracy of NHOD, which is compared against the six mainstream outlier detection algorithms handling the six UCI datasets. The experimental and comparison results are tabulated in Table 1.
 
