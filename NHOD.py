@@ -15,22 +15,20 @@ name=np.array([1])
 for na in range(name.shape[0]):
     parts = ['../data/data','.mat']
     namen=str(name[na])
-    print('数据：data'+namen)
+    print('Dataset:'+namen)
     dataFile = parts[0]+namen+parts[1]
     data = scio.loadmat(dataFile)
     data1=data['data'][:,0:-1]
     lable=data['data'][:,-1]
     w=data1.shape[1]
-    print('数据对象', data1.shape[0])
-    print('属性：',w)
-    T=np.sum(lable==1)          #统计离群点个数
-    # print(lable)
-    print('离群点个数:',T)
-    # 归一化
+    print('number of objects：', data1.shape[0])
+    print('number of dimensions：',w)
+    T=np.sum(lable==1)          #number of outliers
+    print('number of outliers:',T)
     min_max_scaler = MinMaxScaler()
     Tdata = min_max_scaler.fit_transform(data1)
     tree = KDTree(Tdata,leafsize=100000)
-    trandata = np.array([[row[i] for row in Tdata] for i in range(len(Tdata[0]))])  # 转置矩阵
+    trandata = np.array([[row[i] for row in Tdata] for i in range(len(Tdata[0]))])
     dist, ind = tree.query(Tdata, K[K.shape[0] - 1] + 1)
     fpauc=open(r'./auc/auc.txt',"a+")
     fpacc=open(r'./acc/ac.txt',"a+")
