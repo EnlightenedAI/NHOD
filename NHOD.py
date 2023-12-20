@@ -75,15 +75,14 @@ for na in range(name.shape[0]):
         lcod = np.linalg.norm(LCF, axis=0, keepdims=True)
         end = time.time()
         rLcf = lcod.T
-        for kk in range(1,k+1):
-            if kk==1:
-                LDCD=lcod[0,ind[:,kk]]
+        for kk in range(0,k+1):
+            if kk==0:
+                NHOD=lcod[0,ind[:,kk]]
             else:
-                LDCD=LDCD+lcod[0,ind[:,kk]]
-        LDCD=np.array(LDCD).reshape(len(data1),1)
-        LDCD=rLcf/LDCD
-        AUC=roc_auc_score(lable,LDCD)
-        y_pred = pyod.utils.utility.get_label_n(lable,LDCD, T)
+                NHOD=LDCD+lcod[0,ind[:,kk]]
+        NHOD=np.array(NHOD).reshape(len(data1),1)
+        AUC=roc_auc_score(lable,NHOD)
+        y_pred = pyod.utils.utility.get_label_n(lable,NHOD, T)
         AC=accuracy_score(lable, y_pred)
         print('Accuracy:',AC)
         runtime=end-start
