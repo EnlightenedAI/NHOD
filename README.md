@@ -1,6 +1,10 @@
 # NHOD: A High-dimensional Outlier Detection Approach Based on Local Coulomb Force
 
-A High-dimensional Outlier Detection Approach Based on Local Coulomb Force.
+<div align="center">
+
+[![Paper - TKDE 2022](https://img.shields.io/badge/Paper-TKDE_2022-blue)](https://www.computer.org/csdl/journal/tk/2023/06/09766449/1D4HcJ0VYNq)
+[![Code License](https://img.shields.io/badge/Code%20License-MIT-blue.svg)](LICENSE)
+</div>
 
 ### Abstract
 Traditional outlier detections are inadequate for high-dimensional data analysis due to the interference of distance tending to be concentrated (“curse of dimensionality”). Inspired by the Coulomb's law, we propose a new high-dimensional data similarity measure vector, which consists of outlier Coulomb force and outlier Coulomb resultant force. Outlier Coulomb force not only effectively gauges similarity measures among data objects, but also fully reflects differences among dimensions of data objects by vector projection in each dimension. More importantly, Coulomb resultant force can effectively measure deviations of data objects from a data center, making detection results interpretable. We introduce a new neighborhood outlier factor, which drives the development of a high-dimensional outlier detection algorithm. In our approach, attribute values with a high deviation degree is treated as interpretable information of outlier data. Finally, we implement and evaluate our algorithm using the UCI and synthetic datasets. Our experimental results show that the algorithm effectively alleviates the interference of “Curse of Dimensionality”. The findings confirm that high-dimensional outlier data originated by the algorithm are interpretable.
